@@ -1,0 +1,521 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D4035C1217D886A00836F9D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4035C0217D886A00836F9D /* ViewController.swift */; };
+		1D4035C4217D886A00836F9D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D4035C2217D886A00836F9D /* Main.storyboard */; };
+		1D4035C6217D886C00836F9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D4035C5217D886C00836F9D /* Assets.xcassets */; };
+		1D4035C9217D886C00836F9D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D4035C7217D886C00836F9D /* LaunchScreen.storyboard */; };
+		1DB63BCE2192256700088392 /* SkinCancerDetectionV3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 1DB63BCD2192256700088392 /* SkinCancerDetectionV3.mlmodel */; };
+		784BFD8624552E8A00E7828B /* coreml_model.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 784BFD8524552E8900E7828B /* coreml_model.mlmodel */; };
+		784BFD8824553AA100E7828B /* PulseAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784BFD8724553AA000E7828B /* PulseAnimation.swift */; };
+		78765BFA2455EABD009508F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78765BF92455EABC009508F4 /* AppDelegate.swift */; };
+		78765C0724563486009508F4 /* PlantLibraryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78765BFB24563484009508F4 /* PlantLibraryTableViewCell.swift */; };
+		78765C0824563486009508F4 /* utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78765BFC24563484009508F4 /* utilities.swift */; };
+		78765C0924563486009508F4 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78765BFD24563484009508F4 /* Log.swift */; };
+		78765C0A24563486009508F4 /* LibraryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78765BFE24563484009508F4 /* LibraryDetailView.swift */; };
+		78765C0B24563486009508F4 /* EditPlantLevelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78765BFF24563485009508F4 /* EditPlantLevelManager.swift */; };
+		78765C0C24563486009508F4 /* EditingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78765C0024563485009508F4 /* EditingTableViewCell.swift */; };
+		78765C0D24563486009508F4 /* GeneralInformtationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78765C0124563485009508F4 /* GeneralInformtationTableViewCell.swift */; };
+		78765C0E24563486009508F4 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78765C0224563485009508F4 /* ImageCollectionViewCell.swift */; };
+		78765C0F24563486009508F4 /* PlantsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78765C0324563486009508F4 /* PlantsManager.swift */; };
+		78765C1024563486009508F4 /* ImagePagingViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78765C0424563486009508F4 /* ImagePagingViewCell.swift */; };
+		78765C1124563486009508F4 /* AssetIndexIDTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78765C0524563486009508F4 /* AssetIndexIDTracker.swift */; };
+		78765C1224563486009508F4 /* Plant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78765C0624563486009508F4 /* Plant.swift */; };
+		78765C1624563496009508F4 /* ZoomDismissalInteractionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78765C1324563496009508F4 /* ZoomDismissalInteractionController.swift */; };
+		78765C1724563496009508F4 /* ZoomAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78765C1424563496009508F4 /* ZoomAnimator.swift */; };
+		78765C1824563496009508F4 /* ZoomTransitionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78765C1524563496009508F4 /* ZoomTransitionController.swift */; };
+		78765C222456388F009508F4 /* GeneralPlantInformationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78765C1B2456388E009508F4 /* GeneralPlantInformationTableViewController.swift */; };
+		78765C232456388F009508F4 /* LinksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78765C1C2456388E009508F4 /* LinksTableViewController.swift */; };
+		78765C242456388F009508F4 /* ImagePagingCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78765C1D2456388E009508F4 /* ImagePagingCollectionViewController.swift */; };
+		78765C252456388F009508F4 /* ImageCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78765C1E2456388E009508F4 /* ImageCollectionViewController.swift */; };
+		78765C262456388F009508F4 /* PlantLibraryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78765C1F2456388E009508F4 /* PlantLibraryTableViewController.swift */; };
+		78765C272456388F009508F4 /* PlantAssetsPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78765C202456388E009508F4 /* PlantAssetsPickerViewController.swift */; };
+		78765C282456388F009508F4 /* LibraryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78765C212456388F009508F4 /* LibraryDetailViewController.swift */; };
+		78765C2A24563A22009508F4 /* DiseaseTracker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78765C2924563A22009508F4 /* DiseaseTracker.storyboard */; };
+		78884EE624540DDF00C3A95F /* ImageClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 78884EE524540DDF00C3A95F /* ImageClassifier.mlmodel */; };
+		C2359BC9C688C2094DE01A7B /* Pods_SkinCancerDetectorApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8F0DAB46026231F3867BACA /* Pods_SkinCancerDetectorApp.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1445B0604BB981AC4194A11A /* Pods-SkinCancerDetectorApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkinCancerDetectorApp.release.xcconfig"; path = "Target Support Files/Pods-SkinCancerDetectorApp/Pods-SkinCancerDetectorApp.release.xcconfig"; sourceTree = "<group>"; };
+		1D4035BB217D886A00836F9D /* plantAId.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = plantAId.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D4035C0217D886A00836F9D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1D4035C3217D886A00836F9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1D4035C5217D886C00836F9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1D4035C8217D886C00836F9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1D4035CA217D886C00836F9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1DB63BCD2192256700088392 /* SkinCancerDetectionV3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SkinCancerDetectionV3.mlmodel; sourceTree = "<group>"; };
+		6A0D2D238BDDB78725678C59 /* Pods-SkinCancerDetectorApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkinCancerDetectorApp.debug.xcconfig"; path = "Target Support Files/Pods-SkinCancerDetectorApp/Pods-SkinCancerDetectorApp.debug.xcconfig"; sourceTree = "<group>"; };
+		784BFD8524552E8900E7828B /* coreml_model.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = coreml_model.mlmodel; sourceTree = "<group>"; };
+		784BFD8724553AA000E7828B /* PulseAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PulseAnimation.swift; sourceTree = "<group>"; };
+		78765BF92455EABC009508F4 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		78765BFB24563484009508F4 /* PlantLibraryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlantLibraryTableViewCell.swift; sourceTree = "<group>"; };
+		78765BFC24563484009508F4 /* utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = utilities.swift; sourceTree = "<group>"; };
+		78765BFD24563484009508F4 /* Log.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
+		78765BFE24563484009508F4 /* LibraryDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibraryDetailView.swift; sourceTree = "<group>"; };
+		78765BFF24563485009508F4 /* EditPlantLevelManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditPlantLevelManager.swift; sourceTree = "<group>"; };
+		78765C0024563485009508F4 /* EditingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditingTableViewCell.swift; sourceTree = "<group>"; };
+		78765C0124563485009508F4 /* GeneralInformtationTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralInformtationTableViewCell.swift; sourceTree = "<group>"; };
+		78765C0224563485009508F4 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		78765C0324563486009508F4 /* PlantsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlantsManager.swift; sourceTree = "<group>"; };
+		78765C0424563486009508F4 /* ImagePagingViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePagingViewCell.swift; sourceTree = "<group>"; };
+		78765C0524563486009508F4 /* AssetIndexIDTracker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssetIndexIDTracker.swift; sourceTree = "<group>"; };
+		78765C0624563486009508F4 /* Plant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Plant.swift; sourceTree = "<group>"; };
+		78765C1324563496009508F4 /* ZoomDismissalInteractionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZoomDismissalInteractionController.swift; sourceTree = "<group>"; };
+		78765C1424563496009508F4 /* ZoomAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZoomAnimator.swift; sourceTree = "<group>"; };
+		78765C1524563496009508F4 /* ZoomTransitionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZoomTransitionController.swift; sourceTree = "<group>"; };
+		78765C1B2456388E009508F4 /* GeneralPlantInformationTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralPlantInformationTableViewController.swift; sourceTree = "<group>"; };
+		78765C1C2456388E009508F4 /* LinksTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinksTableViewController.swift; sourceTree = "<group>"; };
+		78765C1D2456388E009508F4 /* ImagePagingCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePagingCollectionViewController.swift; sourceTree = "<group>"; };
+		78765C1E2456388E009508F4 /* ImageCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewController.swift; sourceTree = "<group>"; };
+		78765C1F2456388E009508F4 /* PlantLibraryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlantLibraryTableViewController.swift; sourceTree = "<group>"; };
+		78765C202456388E009508F4 /* PlantAssetsPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlantAssetsPickerViewController.swift; sourceTree = "<group>"; };
+		78765C212456388F009508F4 /* LibraryDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibraryDetailViewController.swift; sourceTree = "<group>"; };
+		78765C2924563A22009508F4 /* DiseaseTracker.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DiseaseTracker.storyboard; sourceTree = "<group>"; };
+		78884EE524540DDF00C3A95F /* ImageClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = ImageClassifier.mlmodel; sourceTree = "<group>"; };
+		F8F0DAB46026231F3867BACA /* Pods_SkinCancerDetectorApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SkinCancerDetectorApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D4035B8217D886A00836F9D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2359BC9C688C2094DE01A7B /* Pods_SkinCancerDetectorApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1D4035B2217D886A00836F9D = {
+			isa = PBXGroup;
+			children = (
+				1D4035BD217D886A00836F9D /* SkinCancerDetectorApp */,
+				1D4035BC217D886A00836F9D /* Products */,
+				E583374589D3C31CB4CE4445 /* Pods */,
+				1F0662B86E4892A4BB867D41 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1D4035BC217D886A00836F9D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D4035BB217D886A00836F9D /* plantAId.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1D4035BD217D886A00836F9D /* SkinCancerDetectorApp */ = {
+			isa = PBXGroup;
+			children = (
+				1D4035C0217D886A00836F9D /* ViewController.swift */,
+				1D4035C2217D886A00836F9D /* Main.storyboard */,
+				78765C2924563A22009508F4 /* DiseaseTracker.storyboard */,
+				784BFD8724553AA000E7828B /* PulseAnimation.swift */,
+				78765BF92455EABC009508F4 /* AppDelegate.swift */,
+				78765C0524563486009508F4 /* AssetIndexIDTracker.swift */,
+				78765C0024563485009508F4 /* EditingTableViewCell.swift */,
+				78765BFF24563485009508F4 /* EditPlantLevelManager.swift */,
+				78765C1B2456388E009508F4 /* GeneralPlantInformationTableViewController.swift */,
+				78765C1E2456388E009508F4 /* ImageCollectionViewController.swift */,
+				78765C1D2456388E009508F4 /* ImagePagingCollectionViewController.swift */,
+				78765C212456388F009508F4 /* LibraryDetailViewController.swift */,
+				78765C1C2456388E009508F4 /* LinksTableViewController.swift */,
+				78765C202456388E009508F4 /* PlantAssetsPickerViewController.swift */,
+				78765C1F2456388E009508F4 /* PlantLibraryTableViewController.swift */,
+				78765C0124563485009508F4 /* GeneralInformtationTableViewCell.swift */,
+				78765C0224563485009508F4 /* ImageCollectionViewCell.swift */,
+				78765C0424563486009508F4 /* ImagePagingViewCell.swift */,
+				78765BFE24563484009508F4 /* LibraryDetailView.swift */,
+				78765BFD24563484009508F4 /* Log.swift */,
+				78765C0624563486009508F4 /* Plant.swift */,
+				78765BFB24563484009508F4 /* PlantLibraryTableViewCell.swift */,
+				78765C1424563496009508F4 /* ZoomAnimator.swift */,
+				78765C1324563496009508F4 /* ZoomDismissalInteractionController.swift */,
+				78765C1524563496009508F4 /* ZoomTransitionController.swift */,
+				78765C0324563486009508F4 /* PlantsManager.swift */,
+				78765BFC24563484009508F4 /* utilities.swift */,
+				1DB63BCD2192256700088392 /* SkinCancerDetectionV3.mlmodel */,
+				78884EE524540DDF00C3A95F /* ImageClassifier.mlmodel */,
+				784BFD8524552E8900E7828B /* coreml_model.mlmodel */,
+				1D4035C5217D886C00836F9D /* Assets.xcassets */,
+				1D4035C7217D886C00836F9D /* LaunchScreen.storyboard */,
+				1D4035CA217D886C00836F9D /* Info.plist */,
+			);
+			path = SkinCancerDetectorApp;
+			sourceTree = "<group>";
+		};
+		1F0662B86E4892A4BB867D41 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F8F0DAB46026231F3867BACA /* Pods_SkinCancerDetectorApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E583374589D3C31CB4CE4445 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6A0D2D238BDDB78725678C59 /* Pods-SkinCancerDetectorApp.debug.xcconfig */,
+				1445B0604BB981AC4194A11A /* Pods-SkinCancerDetectorApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D4035BA217D886A00836F9D /* plantAId */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D4035CD217D886C00836F9D /* Build configuration list for PBXNativeTarget "plantAId" */;
+			buildPhases = (
+				9371835B3281FDFDF33CDA0A /* [CP] Check Pods Manifest.lock */,
+				1D4035B7217D886A00836F9D /* Sources */,
+				1D4035B8217D886A00836F9D /* Frameworks */,
+				1D4035B9217D886A00836F9D /* Resources */,
+				DFBF59741F3834DF4CF93835 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = plantAId;
+			productName = SkinCancerDetectorApp;
+			productReference = 1D4035BB217D886A00836F9D /* plantAId.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1D4035B3217D886A00836F9D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = RenatoGamboa;
+				TargetAttributes = {
+					1D4035BA217D886A00836F9D = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 1D4035B6217D886A00836F9D /* Build configuration list for PBXProject "plantAId" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1D4035B2217D886A00836F9D;
+			productRefGroup = 1D4035BC217D886A00836F9D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D4035BA217D886A00836F9D /* plantAId */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D4035B9217D886A00836F9D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D4035C9217D886C00836F9D /* LaunchScreen.storyboard in Resources */,
+				1D4035C6217D886C00836F9D /* Assets.xcassets in Resources */,
+				78765C2A24563A22009508F4 /* DiseaseTracker.storyboard in Resources */,
+				1D4035C4217D886A00836F9D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9371835B3281FDFDF33CDA0A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SkinCancerDetectorApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DFBF59741F3834DF4CF93835 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SkinCancerDetectorApp/Pods-SkinCancerDetectorApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SkinCancerDetectorApp/Pods-SkinCancerDetectorApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SkinCancerDetectorApp/Pods-SkinCancerDetectorApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D4035B7217D886A00836F9D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78765BFA2455EABD009508F4 /* AppDelegate.swift in Sources */,
+				78765C1624563496009508F4 /* ZoomDismissalInteractionController.swift in Sources */,
+				78765C1224563486009508F4 /* Plant.swift in Sources */,
+				1DB63BCE2192256700088392 /* SkinCancerDetectionV3.mlmodel in Sources */,
+				78765C0924563486009508F4 /* Log.swift in Sources */,
+				78765C1124563486009508F4 /* AssetIndexIDTracker.swift in Sources */,
+				78765C0A24563486009508F4 /* LibraryDetailView.swift in Sources */,
+				78765C0B24563486009508F4 /* EditPlantLevelManager.swift in Sources */,
+				78765C242456388F009508F4 /* ImagePagingCollectionViewController.swift in Sources */,
+				1D4035C1217D886A00836F9D /* ViewController.swift in Sources */,
+				78765C0D24563486009508F4 /* GeneralInformtationTableViewCell.swift in Sources */,
+				78884EE624540DDF00C3A95F /* ImageClassifier.mlmodel in Sources */,
+				78765C1024563486009508F4 /* ImagePagingViewCell.swift in Sources */,
+				78765C232456388F009508F4 /* LinksTableViewController.swift in Sources */,
+				784BFD8824553AA100E7828B /* PulseAnimation.swift in Sources */,
+				78765C252456388F009508F4 /* ImageCollectionViewController.swift in Sources */,
+				78765C272456388F009508F4 /* PlantAssetsPickerViewController.swift in Sources */,
+				78765C1824563496009508F4 /* ZoomTransitionController.swift in Sources */,
+				78765C1724563496009508F4 /* ZoomAnimator.swift in Sources */,
+				78765C222456388F009508F4 /* GeneralPlantInformationTableViewController.swift in Sources */,
+				78765C0F24563486009508F4 /* PlantsManager.swift in Sources */,
+				78765C0C24563486009508F4 /* EditingTableViewCell.swift in Sources */,
+				78765C262456388F009508F4 /* PlantLibraryTableViewController.swift in Sources */,
+				78765C0E24563486009508F4 /* ImageCollectionViewCell.swift in Sources */,
+				784BFD8624552E8A00E7828B /* coreml_model.mlmodel in Sources */,
+				78765C282456388F009508F4 /* LibraryDetailViewController.swift in Sources */,
+				78765C0824563486009508F4 /* utilities.swift in Sources */,
+				78765C0724563486009508F4 /* PlantLibraryTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1D4035C2217D886A00836F9D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1D4035C3217D886A00836F9D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1D4035C7217D886C00836F9D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1D4035C8217D886C00836F9D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1D4035CB217D886C00836F9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		1D4035CC217D886C00836F9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1D4035CE217D886C00836F9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A0D2D238BDDB78725678C59 /* Pods-SkinCancerDetectorApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				COREML_CODEGEN_LANGUAGE = Swift;
+				DEVELOPMENT_TEAM = G3A54M726V;
+				INFOPLIST_FILE = SkinCancerDetectorApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.anish.plantAId2;
+				PRODUCT_NAME = plantAId;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1D4035CF217D886C00836F9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1445B0604BB981AC4194A11A /* Pods-SkinCancerDetectorApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				COREML_CODEGEN_LANGUAGE = Swift;
+				DEVELOPMENT_TEAM = G3A54M726V;
+				INFOPLIST_FILE = SkinCancerDetectorApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.anish.plantAId2;
+				PRODUCT_NAME = plantAId;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D4035B6217D886A00836F9D /* Build configuration list for PBXProject "plantAId" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D4035CB217D886C00836F9D /* Debug */,
+				1D4035CC217D886C00836F9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1D4035CD217D886C00836F9D /* Build configuration list for PBXNativeTarget "plantAId" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D4035CE217D886C00836F9D /* Debug */,
+				1D4035CF217D886C00836F9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1D4035B3217D886A00836F9D /* Project object */;
+}

@@ -1,0 +1,804 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Awg-re-Dqe">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--diseaseTracker2-->
+        <scene sceneID="o6X-cz-czD">
+            <objects>
+                <viewControllerPlaceholder storyboardName="DiseaseTracker" referencedIdentifier="diseaseTracker2" id="yEe-ah-Zd3" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Gqu-jk-0vp"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vJE-tH-sGq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1007" y="-307"/>
+        </scene>
+        <!--Scan-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="diseaseTracker" id="BYZ-38-t0r" customClass="ViewController" customModule="SkinCancerDetectorApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eJP-AH-OVd">
+                                <rect key="frame" x="20" y="180" width="374" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="QDM-jv-M7f"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="35"/>
+                                <color key="textColor" red="0.915420711" green="0.53871709109999999" blue="0.15023604039999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="1" height="1"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VVJ-3N-xUq">
+                                <rect key="frame" x="20" y="230" width="374" height="43"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="35"/>
+                                <color key="textColor" red="0.915420711" green="0.53871709109999999" blue="0.15023604039999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="1" height="1"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sl0-jj-O5M">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="962"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8kh-LX-GGg">
+                                <rect key="frame" x="157" y="700" width="100" height="100"/>
+                                <state key="normal" title="Button" image="icons8-circle-100"/>
+                                <connections>
+                                    <action selector="photoButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wcg-6b-Woh"/>
+                                </connections>
+                            </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Click the button on the bottom to see your plant's disease!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qiz-PQ-P7Y">
+                                <rect key="frame" x="20" y="116" width="374" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="rSM-sa-lbX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icons8-potted-plant-96 (1)" translatesAutoresizingMaskIntoConstraints="NO" id="aeO-g6-kb4">
+                                <rect key="frame" x="57" y="11" width="96" height="96"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="plantAId" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zx2-BW-eY5">
+                                <rect key="frame" x="161" y="39" width="152" height="55"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="46"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="sl0-jj-O5M" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="3ss-jY-EMa"/>
+                            <constraint firstItem="VVJ-3N-xUq" firstAttribute="leading" secondItem="eJP-AH-OVd" secondAttribute="leading" id="4CO-Gv-j9x"/>
+                            <constraint firstItem="qiz-PQ-P7Y" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="4pM-bf-xeD"/>
+                            <constraint firstItem="Zx2-BW-eY5" firstAttribute="leading" secondItem="aeO-g6-kb4" secondAttribute="trailing" constant="8" id="7Op-2X-AMJ"/>
+                            <constraint firstItem="VVJ-3N-xUq" firstAttribute="trailing" secondItem="eJP-AH-OVd" secondAttribute="trailing" id="8G1-UC-ZDZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="8kh-LX-GGg" secondAttribute="bottom" constant="8" id="E3T-lc-xTZ"/>
+                            <constraint firstItem="eJP-AH-OVd" firstAttribute="leading" secondItem="qiz-PQ-P7Y" secondAttribute="leading" id="GA7-PY-fyR"/>
+                            <constraint firstItem="VVJ-3N-xUq" firstAttribute="top" secondItem="eJP-AH-OVd" secondAttribute="bottom" constant="1" id="HbA-lj-uww"/>
+                            <constraint firstItem="eJP-AH-OVd" firstAttribute="top" secondItem="qiz-PQ-P7Y" secondAttribute="bottom" constant="8" id="OHC-NG-ib9"/>
+                            <constraint firstItem="qiz-PQ-P7Y" firstAttribute="top" secondItem="Zx2-BW-eY5" secondAttribute="bottom" constant="22" id="Ums-DG-PiE"/>
+                            <constraint firstItem="sl0-jj-O5M" firstAttribute="centerX" secondItem="qiz-PQ-P7Y" secondAttribute="centerX" id="W3g-Df-hzW"/>
+                            <constraint firstAttribute="bottom" secondItem="sl0-jj-O5M" secondAttribute="bottom" constant="-120" id="Yzn-kY-pux"/>
+                            <constraint firstItem="aeO-g6-kb4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="37" id="cIA-Ee-5df"/>
+                            <constraint firstItem="sl0-jj-O5M" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="fJw-kb-o3Q"/>
+                            <constraint firstItem="qiz-PQ-P7Y" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="krE-Xb-c6x"/>
+                            <constraint firstItem="qiz-PQ-P7Y" firstAttribute="top" secondItem="aeO-g6-kb4" secondAttribute="bottom" constant="9" id="nnH-fh-wgA"/>
+                            <constraint firstItem="VVJ-3N-xUq" firstAttribute="centerX" secondItem="8kh-LX-GGg" secondAttribute="centerX" id="qEo-M9-eZZ"/>
+                            <constraint firstItem="qiz-PQ-P7Y" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="rE6-o9-grs"/>
+                            <constraint firstItem="eJP-AH-OVd" firstAttribute="trailing" secondItem="qiz-PQ-P7Y" secondAttribute="trailing" id="xDU-S2-IUv"/>
+                            <constraint firstItem="8kh-LX-GGg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="157" id="xtC-pf-iIg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Scan" image="camera.viewfinder" catalog="system" id="ZS4-JY-YAe"/>
+                    <navigationItem key="navigationItem" id="oEv-IV-gAM">
+                        <barButtonItem key="rightBarButtonItem" title="Disease Tracker" id="fw5-al-aJp">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <segue destination="5HE-Li-EjZ" kind="show" id="AUF-Kd-KK0"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="cameraView" destination="sl0-jj-O5M" id="S2U-UW-9nC"/>
+                        <outlet property="textLabel" destination="eJP-AH-OVd" id="YDI-if-KXZ"/>
+                        <outlet property="textLabel2" destination="VVJ-3N-xUq" id="y6v-sC-myR"/>
+                        <segue destination="2HK-eu-dEa" kind="show" identifier="photoToSeptoria" id="FeL-5W-2EJ"/>
+                        <segue destination="3Go-4h-cWJ" kind="show" identifier="photoToBlight" id="MeN-Bo-bnF"/>
+                        <segue destination="28W-gW-aW4" kind="show" identifier="photoToTargetSpot" id="7wR-fR-M64"/>
+                        <segue destination="UKn-pl-AXk" kind="show" identifier="photoToTomato" id="Xr0-3n-Olm"/>
+                        <segue destination="txe-8V-2Y1" kind="show" identifier="photoToGrapeBlackMeasles" id="eEi-YE-36U"/>
+                        <segue destination="zt4-n0-UBZ" kind="show" identifier="photoToBlueberry" id="V2M-rZ-WlM"/>
+                        <segue destination="ML6-hw-SVU" kind="show" identifier="photoToStrawberry" id="ebt-ka-NDm"/>
+                        <segue destination="Aan-b3-83m" kind="show" identifier="photoToPeach" id="RG2-oy-9yH"/>
+                        <segue destination="29A-cG-5lP" kind="show" identifier="photoToCorn" id="bmf-Ih-Yc9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2863.768115942029" y="133.25892857142856"/>
+        </scene>
+        <!--diseaseTracker-->
+        <scene sceneID="JH8-o8-29d">
+            <objects>
+                <viewControllerPlaceholder storyboardName="DiseaseTracker" referencedIdentifier="diseaseTracker" id="5HE-Li-EjZ" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="yDg-7Y-PRg"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bhg-jb-lwI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3371" y="72"/>
+        </scene>
+        <!--Early Blight-->
+        <scene sceneID="fYM-fJ-kbv">
+            <objects>
+                <viewController id="3Go-4h-cWJ" customClass="BenignViewController" customModule="SkinCancerDetectorApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TXq-Qn-e5Q">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bKQ-Ho-Hz2">
+                                <rect key="frame" x="11" y="387" width="383" height="88"/>
+                                <string key="text">One of the most common diseases. Early blight can do a lot of minor damages to your tomato crops, makes the leaves stems and plant rot.
+</string>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is Early Blight?:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S67-ad-4rE">
+                                <rect key="frame" x="11" y="352" width="234" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Uea-Rb-nle"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="25"/>
+                                <color key="textColor" red="0.915420711" green="0.53871709109999999" blue="0.15023604039999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Other Information:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KXm-57-KUV">
+                                <rect key="frame" x="11" y="465" width="192" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="3jI-VT-vem"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="25"/>
+                                <color key="textColor" red="0.915420711" green="0.53871709109999999" blue="0.15023604039999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Jui-L8-Hfn">
+                                <rect key="frame" x="11" y="511" width="383" height="297"/>
+                                <string key="text">Symptoms: Small dark spots will form on the leaf, Larger spots will have target like rings, which the surrounding tissue will turn yellow, Stems will be infected right above the soil line, will become brown, sunken, and dry
+If the infection is given too much sunlight, the seedling will wilt and thus die, the fruit can be infected at any age, Spots are brown and black, with ridges. Those infected will likely drop from the plant.
+Treatment: This virus develops in temperatures ranging from 60 - 80 F, but usually in the higher range of those two numbers. Using blight resistant sprays can stop or delay this virus, brands such as Iron Lady, Jasper, Verona. Using pathogen - free seeds, or seeds from disease - free plants can greatly reduce the chance of your tomato developing this infection. Use drip irrigation over overhead irrigation in order to keep the foliage dry.
+</string>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="earlyblight2" translatesAutoresizingMaskIntoConstraints="NO" id="AcH-z7-rdR">
+                                <rect key="frame" x="11" y="108" width="383" height="236"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="236" id="dCd-Hf-5Yg"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Gys-AU-7Ui" firstAttribute="trailing" secondItem="S67-ad-4rE" secondAttribute="trailing" constant="169" id="2Jc-Kw-0MR"/>
+                            <constraint firstItem="AcH-z7-rdR" firstAttribute="leading" secondItem="Gys-AU-7Ui" secondAttribute="leading" constant="11" id="ASp-Pu-R9r"/>
+                            <constraint firstItem="KXm-57-KUV" firstAttribute="top" secondItem="S67-ad-4rE" secondAttribute="bottom" constant="83" id="DD7-we-drZ"/>
+                            <constraint firstItem="AcH-z7-rdR" firstAttribute="trailing" secondItem="TXq-Qn-e5Q" secondAttribute="trailingMargin" id="Dlq-dS-yml"/>
+                            <constraint firstItem="bKQ-Ho-Hz2" firstAttribute="top" secondItem="S67-ad-4rE" secondAttribute="bottom" constant="5" id="HBD-nz-815"/>
+                            <constraint firstItem="AcH-z7-rdR" firstAttribute="top" secondItem="Gys-AU-7Ui" secondAttribute="top" id="IcK-r6-meA"/>
+                            <constraint firstItem="Jui-L8-Hfn" firstAttribute="top" secondItem="KXm-57-KUV" secondAttribute="bottom" constant="8" id="Mh1-8c-Eyj"/>
+                            <constraint firstItem="AcH-z7-rdR" firstAttribute="trailing" secondItem="bKQ-Ho-Hz2" secondAttribute="trailing" id="RHf-lt-Qcp"/>
+                            <constraint firstItem="S67-ad-4rE" firstAttribute="top" secondItem="AcH-z7-rdR" secondAttribute="bottom" constant="8" id="TkH-7d-B2I"/>
+                            <constraint firstItem="Jui-L8-Hfn" firstAttribute="trailing" secondItem="bKQ-Ho-Hz2" secondAttribute="trailing" id="Zkx-vg-I77"/>
+                            <constraint firstItem="KXm-57-KUV" firstAttribute="leading" secondItem="bKQ-Ho-Hz2" secondAttribute="leading" id="g66-lj-a8h"/>
+                            <constraint firstItem="AcH-z7-rdR" firstAttribute="leading" secondItem="S67-ad-4rE" secondAttribute="leading" id="h2Q-6o-gj5"/>
+                            <constraint firstItem="S67-ad-4rE" firstAttribute="leading" secondItem="bKQ-Ho-Hz2" secondAttribute="leading" id="p1C-jl-CB9"/>
+                            <constraint firstItem="Jui-L8-Hfn" firstAttribute="bottom" secondItem="Gys-AU-7Ui" secondAttribute="bottom" id="qrC-hv-Kig"/>
+                            <constraint firstItem="KXm-57-KUV" firstAttribute="leading" secondItem="Jui-L8-Hfn" secondAttribute="leading" id="v4h-mC-R4K"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Gys-AU-7Ui"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Early Blight" id="wRs-VY-5FY"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TXG-IJ-Tzm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="282.60869565217394" y="801.5625"/>
+        </scene>
+        <!--Septoria-->
+        <scene sceneID="062-rc-XJb">
+            <objects>
+                <viewController id="2HK-eu-dEa" customClass="RingwormViewController" customModule="SkinCancerDetectorApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MFA-ux-mfj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eS5-i0-Ojm">
+                                <rect key="frame" x="11" y="382" width="383" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="ecV-vt-nfQ"/>
+                                </constraints>
+                                <string key="text">Septoria leaf spots are caused via fungus, and is one of the most harmful diseases for fruits and even more severe in wet or humid lands</string>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is Septoria?:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ci-mc-drT">
+                                <rect key="frame" x="11" y="347" width="263" height="30"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="25"/>
+                                <color key="textColor" red="0.915420711" green="0.53871709109999999" blue="0.15023604039999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Other Information:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KXK-UC-kLX">
+                                <rect key="frame" x="11" y="465" width="191.5" height="30"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="25"/>
+                                <color key="textColor" red="0.915420711" green="0.53871709109999999" blue="0.15023604039999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="8De-bD-xc0">
+                                <rect key="frame" x="11" y="503" width="383" height="305"/>
+                                <string key="text">Symptoms: These leaf spots emerge near the lower leaves once the fruit first sets. Spots are circular, having a diameter of around 1/16-¼ of an inch. Dark brown - gray circles with black fruiting structures. Many of said circles on the leaves, will slowly change color until the leaf will wither.
+Treatment: Thankfully there are a large amount of treatments for these leaf spots, some of which include removing diseased leaves, if you catch the disease eaky enough removing the leaves that have the spots can be burnt or destroyed. However, leafs where fruits have formed below should not be removed or the plan will be weakened.
+By improving the air circulation of the plants, you will be able to dry the foliage quicker
+Many weeds such as nightshade or horsenettle are most commonly known to have the Septoria leaf spots and should be eliminated .
+</string>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="septoria1" translatesAutoresizingMaskIntoConstraints="NO" id="OwZ-tc-9yX">
+                                <rect key="frame" x="11" y="108" width="383" height="236"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="2ci-mc-drT" firstAttribute="top" secondItem="MFA-ux-mfj" secondAttribute="top" constant="347" id="1Oc-sF-41f"/>
+                            <constraint firstItem="OwZ-tc-9yX" firstAttribute="top" secondItem="hUP-44-Sjr" secondAttribute="top" id="5K7-En-2FP"/>
+                            <constraint firstItem="KXK-UC-kLX" firstAttribute="top" secondItem="eS5-i0-Ojm" secondAttribute="bottom" constant="3" id="6xL-eC-o9H"/>
+                            <constraint firstItem="8De-bD-xc0" firstAttribute="leading" secondItem="KXK-UC-kLX" secondAttribute="leading" id="JGK-Xt-EY7"/>
+                            <constraint firstItem="hUP-44-Sjr" firstAttribute="trailing" secondItem="2ci-mc-drT" secondAttribute="trailing" constant="140" id="JeV-nj-tk4"/>
+                            <constraint firstItem="eS5-i0-Ojm" firstAttribute="leading" secondItem="KXK-UC-kLX" secondAttribute="leading" id="NqH-A2-ykI"/>
+                            <constraint firstItem="8De-bD-xc0" firstAttribute="trailing" secondItem="eS5-i0-Ojm" secondAttribute="trailing" id="VMg-3h-bqi"/>
+                            <constraint firstItem="8De-bD-xc0" firstAttribute="top" secondItem="KXK-UC-kLX" secondAttribute="bottom" constant="8" id="XyS-Um-eqc"/>
+                            <constraint firstItem="8De-bD-xc0" firstAttribute="bottom" secondItem="hUP-44-Sjr" secondAttribute="bottom" id="Y0A-54-yzf"/>
+                            <constraint firstItem="2ci-mc-drT" firstAttribute="top" secondItem="OwZ-tc-9yX" secondAttribute="bottom" constant="3" id="beh-Ak-ZYo"/>
+                            <constraint firstItem="eS5-i0-Ojm" firstAttribute="top" secondItem="2ci-mc-drT" secondAttribute="bottom" constant="5" id="hf2-k8-cQZ"/>
+                            <constraint firstItem="2ci-mc-drT" firstAttribute="leading" secondItem="eS5-i0-Ojm" secondAttribute="leading" id="kYW-cI-fqW"/>
+                            <constraint firstItem="OwZ-tc-9yX" firstAttribute="leading" secondItem="2ci-mc-drT" secondAttribute="leading" id="mqa-V6-Ygn"/>
+                            <constraint firstItem="OwZ-tc-9yX" firstAttribute="trailing" secondItem="eS5-i0-Ojm" secondAttribute="trailing" id="oXY-cQ-Ier"/>
+                            <constraint firstItem="2ci-mc-drT" firstAttribute="leading" secondItem="hUP-44-Sjr" secondAttribute="leading" constant="11" id="slX-Eh-vHR"/>
+                            <constraint firstItem="8De-bD-xc0" firstAttribute="trailing" secondItem="MFA-ux-mfj" secondAttribute="trailingMargin" id="xOE-yf-8fp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hUP-44-Sjr"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Septoria" id="ndu-OF-llE"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cdf-AG-6m5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1042.0289855072465" y="801.5625"/>
+        </scene>
+        <!--Target Spot-->
+        <scene sceneID="sov-Wk-try">
+            <objects>
+                <viewController id="28W-gW-aW4" customClass="MeaslesViewController" customModule="SkinCancerDetectorApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xAG-Zc-6NY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s9V-Er-Y5G">
+                                <rect key="frame" x="11" y="382" width="383" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="jaW-Xi-bJF"/>
+                                </constraints>
+                                <string key="text">Target spots are dark rings that are usually misdiagnosed as early blight, as they both have target like appearances, mainly spread through the air
+</string>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What are Target Spots?:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fv4-68-hh9">
+                                <rect key="frame" x="11" y="347" width="252" height="30"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="25"/>
+                                <color key="textColor" red="0.915420711" green="0.53871709109999999" blue="0.15023604039999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Other Information:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iey-2o-ndd">
+                                <rect key="frame" x="11" y="465" width="192" height="30"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="25"/>
+                                <color key="textColor" red="0.915420711" green="0.53871709109999999" blue="0.15023604039999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="b97-S6-wQN">
+                                <rect key="frame" x="11" y="503" width="383" height="305"/>
+                                <string key="text">Symptoms: Early on these target spots will be hard to differentiate from other diseases, but as the fruit ripens the fruit will have circular spots with target-like rings which display a dark black fungus in the center 
+Treatment
+Make sure to rotate crops, meaning you shouldn;’t plant crops in areas where other disease carrying plants may have been in the past year.  A study by Rutgers University shows how a three-year rotation cycle is the most efficient to reduce soil-borne fungi.
+By watering plants in the morning, you will be giving the leaves time to dry during the sun time.  Applying mulch to prevent the fruit from coming into contact with the soil is also a way to treat this disease
+Another method, if early enough, is to remove the leaves infected and get rid of them before they have the time to spread
+</string>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="targetspot" translatesAutoresizingMaskIntoConstraints="NO" id="wi9-uI-Qis">
+                                <rect key="frame" x="11" y="108" width="383" height="236"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="236" id="ya1-Kp-Ktc"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Iey-2o-ndd" firstAttribute="top" secondItem="s9V-Er-Y5G" secondAttribute="bottom" constant="3" id="1yk-9m-knK"/>
+                            <constraint firstItem="Iey-2o-ndd" firstAttribute="leading" secondItem="b97-S6-wQN" secondAttribute="leading" id="BND-wD-oC1"/>
+                            <constraint firstItem="Fv4-68-hh9" firstAttribute="top" secondItem="wi9-uI-Qis" secondAttribute="bottom" constant="3" id="Cg3-dY-YKf"/>
+                            <constraint firstItem="wi9-uI-Qis" firstAttribute="trailing" secondItem="xAG-Zc-6NY" secondAttribute="trailingMargin" id="Q72-dB-5zQ"/>
+                            <constraint firstItem="wi9-uI-Qis" firstAttribute="trailing" secondItem="s9V-Er-Y5G" secondAttribute="trailing" id="QUg-Kr-918"/>
+                            <constraint firstItem="b97-S6-wQN" firstAttribute="bottom" secondItem="XKS-EC-4YL" secondAttribute="bottom" id="THT-vK-lGE"/>
+                            <constraint firstItem="wi9-uI-Qis" firstAttribute="leading" secondItem="XKS-EC-4YL" secondAttribute="leading" constant="11" id="Vkf-xq-dUS"/>
+                            <constraint firstItem="s9V-Er-Y5G" firstAttribute="leading" secondItem="Iey-2o-ndd" secondAttribute="leading" id="aS2-w1-R7P"/>
+                            <constraint firstItem="Fv4-68-hh9" firstAttribute="leading" secondItem="s9V-Er-Y5G" secondAttribute="leading" id="esa-mm-SDf"/>
+                            <constraint firstItem="s9V-Er-Y5G" firstAttribute="top" secondItem="Fv4-68-hh9" secondAttribute="bottom" constant="5" id="gyM-id-DLN"/>
+                            <constraint firstItem="b97-S6-wQN" firstAttribute="top" secondItem="Iey-2o-ndd" secondAttribute="bottom" constant="8" id="jTi-CK-ZzG"/>
+                            <constraint firstItem="s9V-Er-Y5G" firstAttribute="trailing" secondItem="b97-S6-wQN" secondAttribute="trailing" id="qrw-TY-0Qb"/>
+                            <constraint firstItem="wi9-uI-Qis" firstAttribute="top" secondItem="XKS-EC-4YL" secondAttribute="top" id="rKb-Ac-Q9Z"/>
+                            <constraint firstItem="wi9-uI-Qis" firstAttribute="leading" secondItem="Fv4-68-hh9" secondAttribute="leading" id="tDO-zm-kX9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="XKS-EC-4YL"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Target Spot" id="QaP-Lx-DWO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WZD-OH-Mdc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1824.6376811594205" y="801.5625"/>
+        </scene>
+        <!--Healthy Tomato-->
+        <scene sceneID="qCF-oI-jXE">
+            <objects>
+                <viewController id="UKn-pl-AXk" customClass="MMViewController" customModule="SkinCancerDetectorApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="H8E-pw-9V1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cKT-tj-3QW">
+                                <rect key="frame" x="11" y="382" width="383" height="160"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="160" id="kIm-Xn-Ken"/>
+                                </constraints>
+                                <string key="text">Your tomato is healthy! An important aspect of growing tomatoes is sunlight.  For a healthy tomato to grow, they require a minimum of 6 hours of sunlight.  Planting times for tomatoes vary but the general rule is to post during spring only after the soil has warmed up. Growing your tomatoes in containers will allow for a higher chance of survival as you are able to keep the soil moist with ease.
+</string>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Congratulations!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nav-T4-uZg">
+                                <rect key="frame" x="11" y="347" width="174.5" height="30"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="25"/>
+                                <color key="textColor" red="0.915420711" green="0.53871709109999999" blue="0.15023604039999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="healthytomato" translatesAutoresizingMaskIntoConstraints="NO" id="d8y-Gt-vMS">
+                                <rect key="frame" x="11" y="108" width="383" height="236"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="236" id="V1e-Af-N1M"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="d8y-Gt-vMS" firstAttribute="trailing" secondItem="cKT-tj-3QW" secondAttribute="trailing" id="8n9-fd-Jpc"/>
+                            <constraint firstItem="cKT-tj-3QW" firstAttribute="leading" secondItem="nav-T4-uZg" secondAttribute="leading" id="CnT-9L-yVR"/>
+                            <constraint firstItem="nav-T4-uZg" firstAttribute="leading" secondItem="rGa-4P-8fs" secondAttribute="leading" constant="11" id="DVP-oa-igJ"/>
+                            <constraint firstItem="d8y-Gt-vMS" firstAttribute="leading" secondItem="nav-T4-uZg" secondAttribute="leading" id="WOr-MQ-DTQ"/>
+                            <constraint firstItem="rGa-4P-8fs" firstAttribute="bottom" secondItem="cKT-tj-3QW" secondAttribute="bottom" constant="266" id="af6-2g-3Qa"/>
+                            <constraint firstItem="d8y-Gt-vMS" firstAttribute="top" secondItem="rGa-4P-8fs" secondAttribute="top" id="oDW-jv-CGH"/>
+                            <constraint firstItem="cKT-tj-3QW" firstAttribute="trailing" secondItem="H8E-pw-9V1" secondAttribute="trailingMargin" id="qtS-z7-NXi"/>
+                            <constraint firstItem="cKT-tj-3QW" firstAttribute="top" secondItem="nav-T4-uZg" secondAttribute="bottom" constant="5" id="rKv-5t-QM6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="rGa-4P-8fs"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Healthy Tomato" id="utu-1O-Fnm"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Umo-f9-jyb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2621.739130434783" y="801.5625"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="cFX-Vk-JAT">
+            <objects>
+                <viewController id="Awg-re-Dqe" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0Rb-br-EIX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icons8-potted-plant-96 (1)" translatesAutoresizingMaskIntoConstraints="NO" id="ziZ-og-OVu">
+                                <rect key="frame" x="57" y="57" width="96" height="96"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ab1-d0-yEy">
+                                <rect key="frame" x="20" y="200" width="374" height="537"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="537" id="HoB-3W-slc"/>
+                                </constraints>
+                                <string key="text">In the farming world, annual losses of 30 to 50 percent of major crops are not uncommon.  Why is this number so high?  The main answer to this shocking statistic is diseases.  Plant based viruses can decimate whole fields if given the ability to spread enough, so what can we do?  Our app, PlanAId, tackles this issue using machine learning by allowing users to scan images of their plants and have major diseases recognized.  This app has the potential to be revolutionary for farmers who will be able to find viruses in the plants before it spreads, cutting that annual loss of crops due to diseases down by large margins.  Whether the user is a farmer, who depends on these crops to make a living, the consumers, some of whom are starving from this lack of food,  whether the disease is on the leaves, stems, or with the buds of the plant, PlantAId is paving the path to a healthier future, one plant at a time. </string>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="plantAId" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6mT-Sh-CMO">
+                                <rect key="frame" x="161" y="85" width="152" height="55"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="46"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xiU-7F-cYD">
+                                <rect key="frame" x="112" y="745" width="190" height="50"/>
+                                <color key="backgroundColor" red="0.915420711" green="0.53871709109999999" blue="0.15023604039999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                <state key="normal" title="Scan Your Plant">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="8tv-wg-n3W" kind="show" id="nMJ-yz-xKb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6mT-Sh-CMO" firstAttribute="leading" secondItem="ziZ-og-OVu" secondAttribute="trailing" constant="8" id="4f1-0b-gAJ"/>
+                            <constraint firstItem="Ipz-ZP-CH2" firstAttribute="bottom" secondItem="xiU-7F-cYD" secondAttribute="bottom" constant="67" id="DuW-pg-0GI"/>
+                            <constraint firstItem="xiU-7F-cYD" firstAttribute="leading" secondItem="Ipz-ZP-CH2" secondAttribute="leading" constant="112" id="FcT-zi-TEy"/>
+                            <constraint firstItem="Ab1-d0-yEy" firstAttribute="top" secondItem="ziZ-og-OVu" secondAttribute="bottom" constant="47" id="QyL-i2-tfe"/>
+                            <constraint firstItem="ziZ-og-OVu" firstAttribute="top" secondItem="Ipz-ZP-CH2" secondAttribute="top" constant="13" id="WNM-9S-WxH"/>
+                            <constraint firstItem="ziZ-og-OVu" firstAttribute="leading" secondItem="Ipz-ZP-CH2" secondAttribute="leading" constant="57" id="Y4E-xv-1oe"/>
+                            <constraint firstItem="6mT-Sh-CMO" firstAttribute="top" secondItem="Ipz-ZP-CH2" secondAttribute="top" constant="41" id="cm3-0h-K0A"/>
+                            <constraint firstItem="xiU-7F-cYD" firstAttribute="top" secondItem="Ab1-d0-yEy" secondAttribute="bottom" constant="8" id="fxH-Ia-hEW"/>
+                            <constraint firstItem="xiU-7F-cYD" firstAttribute="centerX" secondItem="Ab1-d0-yEy" secondAttribute="centerX" id="gk4-ae-6Ik"/>
+                            <constraint firstItem="xiU-7F-cYD" firstAttribute="centerX" secondItem="0Rb-br-EIX" secondAttribute="centerX" id="tdh-5P-ZXJ"/>
+                            <constraint firstItem="Ab1-d0-yEy" firstAttribute="leading" secondItem="0Rb-br-EIX" secondAttribute="leadingMargin" id="uvx-IU-q96"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ipz-ZP-CH2"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tQL-9c-s7r" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="21.739130434782609" y="122.54464285714285"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="2D2-fV-hMv">
+            <objects>
+                <navigationController storyboardIdentifier="diseaseTracker2" automaticallyAdjustsScrollViewInsets="NO" modalTransitionStyle="crossDissolve" modalPresentationStyle="overFullScreen" id="8tv-wg-n3W" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="QSa-or-I2w"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="LEb-7B-qcW">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.915420711" green="0.53871709109999999" blue="0.15023604039999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.915420711" green="0.53871709109999999" blue="0.15023604039999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" red="0.915420711" green="0.53871709109999999" blue="0.15023604039999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="OpC-Iw-ahc">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="layer.TintColor">
+                            <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="SMt-Uv-A69"/>
+                        <segue destination="yEe-ah-Zd3" kind="show" id="CCR-AC-llw"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pXl-yK-8ax" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1043.4782608695652" y="133.25892857142856"/>
+        </scene>
+        <!--Grape Black Mealses-->
+        <scene sceneID="o4t-U2-e65">
+            <objects>
+                <viewController id="txe-8V-2Y1" customClass="MMViewController" customModule="SkinCancerDetectorApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AVH-V1-TT6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xsC-cE-y0u">
+                                <rect key="frame" x="11" y="382" width="383" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="xng-bT-7bZ"/>
+                                </constraints>
+                                <string key="text">A fungus based disease that shows via black spots over grapes and other crops.The symptoms are common in 5 to 7 year old vineyard.
+</string>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What are Black Measles?:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AKL-Oc-ktQ">
+                                <rect key="frame" x="11" y="347" width="270.5" height="30"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="25"/>
+                                <color key="textColor" red="0.915420711" green="0.53871709109999999" blue="0.15023604039999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Other Information:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rgH-Dp-pg4">
+                                <rect key="frame" x="11" y="465" width="191.5" height="30"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="25"/>
+                                <color key="textColor" red="0.915420711" green="0.53871709109999999" blue="0.15023604039999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="xqT-mv-vI2">
+                                <rect key="frame" x="11" y="503" width="383" height="305"/>
+                                <string key="text">Symptoms: Will appear on the leaves, trunks, canes, and berries. Striping on the leaves resembling a tiger
+On berries, black sports appearing, trunk/branches display dark brown streaks and dark sap when the trunk is cut.
+Treatment: Removing the infected berries, protect the prune wounds to lower fungal infection chances, use fertilizers.
+</string>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grapeblackmeasles" translatesAutoresizingMaskIntoConstraints="NO" id="CNt-83-4Ic">
+                                <rect key="frame" x="11" y="108" width="383" height="236"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="236" id="0Nh-YT-kk7"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="CNt-83-4Ic" firstAttribute="top" secondItem="oUB-qk-ooC" secondAttribute="top" id="0ag-Uc-hDG"/>
+                            <constraint firstItem="AKL-Oc-ktQ" firstAttribute="leading" secondItem="oUB-qk-ooC" secondAttribute="leading" constant="11" id="C2O-uu-bwL"/>
+                            <constraint firstItem="xsC-cE-y0u" firstAttribute="top" secondItem="AVH-V1-TT6" secondAttribute="top" constant="382" id="GJd-1n-D6N"/>
+                            <constraint firstItem="xqT-mv-vI2" firstAttribute="top" secondItem="rgH-Dp-pg4" secondAttribute="bottom" constant="8" id="HAe-FP-mys"/>
+                            <constraint firstItem="xqT-mv-vI2" firstAttribute="bottom" secondItem="oUB-qk-ooC" secondAttribute="bottom" id="PiV-2Z-0EO"/>
+                            <constraint firstItem="xqT-mv-vI2" firstAttribute="trailing" secondItem="AVH-V1-TT6" secondAttribute="trailingMargin" id="Syo-zH-EC5"/>
+                            <constraint firstItem="rgH-Dp-pg4" firstAttribute="top" secondItem="xsC-cE-y0u" secondAttribute="bottom" constant="3" id="TO9-l0-iza"/>
+                            <constraint firstItem="CNt-83-4Ic" firstAttribute="trailing" secondItem="xsC-cE-y0u" secondAttribute="trailing" id="YGo-lR-MK8"/>
+                            <constraint firstItem="CNt-83-4Ic" firstAttribute="leading" secondItem="AKL-Oc-ktQ" secondAttribute="leading" id="a55-7B-xij"/>
+                            <constraint firstItem="xqT-mv-vI2" firstAttribute="leading" secondItem="rgH-Dp-pg4" secondAttribute="leading" id="bEG-Pz-lIP"/>
+                            <constraint firstItem="AKL-Oc-ktQ" firstAttribute="leading" secondItem="xsC-cE-y0u" secondAttribute="leading" id="bbP-aC-aXm"/>
+                            <constraint firstItem="xsC-cE-y0u" firstAttribute="leading" secondItem="rgH-Dp-pg4" secondAttribute="leading" id="ciE-TZ-G5k"/>
+                            <constraint firstItem="xqT-mv-vI2" firstAttribute="trailing" secondItem="xsC-cE-y0u" secondAttribute="trailing" id="kuN-MP-GrQ"/>
+                            <constraint firstItem="xsC-cE-y0u" firstAttribute="top" secondItem="AKL-Oc-ktQ" secondAttribute="bottom" constant="5" id="zLI-jj-JNK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="oUB-qk-ooC"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Grape Black Mealses" id="HvO-gv-oR4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KUb-g5-d2b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3425" y="802"/>
+        </scene>
+        <!--Healthy Blueberry-->
+        <scene sceneID="dO0-QS-f9h">
+            <objects>
+                <viewController id="zt4-n0-UBZ" customClass="MMViewController" customModule="SkinCancerDetectorApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bPc-ZO-99N">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a15-lh-YVY">
+                                <rect key="frame" x="11" y="382" width="383" height="175"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="175" id="3Hy-mg-iyp"/>
+                                </constraints>
+                                <string key="text">Your blueberry is healthy!  For further reference, blueberries should be planted as early in the Spring time as possible to ensure their prosperity.  You will need to select a sunny spot that is not subject to winds for the blueberry to grow better as well.  To make sure your blueberries continue to be healthy, make sure to water them with about 1-2 inches of water per week, and watch out for the variety of birds who prey on blueberries.</string>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Congratulations!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qca-Tt-rMh">
+                                <rect key="frame" x="11" y="347" width="174.5" height="30"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="25"/>
+                                <color key="textColor" red="0.915420711" green="0.53871709109999999" blue="0.15023604039999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="healthyblueberries" translatesAutoresizingMaskIntoConstraints="NO" id="DwL-HJ-WAM">
+                                <rect key="frame" x="11" y="108" width="383" height="236"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="236" id="JNa-5C-4ui"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="a15-lh-YVY" firstAttribute="top" secondItem="Qca-Tt-rMh" secondAttribute="bottom" constant="5" id="Ch7-sz-c2i"/>
+                            <constraint firstItem="Qca-Tt-rMh" firstAttribute="leading" secondItem="yJA-rr-4tm" secondAttribute="leading" constant="11" id="G3E-Mj-Jfp"/>
+                            <constraint firstItem="DwL-HJ-WAM" firstAttribute="trailing" secondItem="a15-lh-YVY" secondAttribute="trailing" id="Pdp-uj-6nw"/>
+                            <constraint firstItem="DwL-HJ-WAM" firstAttribute="leading" secondItem="Qca-Tt-rMh" secondAttribute="leading" id="QWB-Ja-oYV"/>
+                            <constraint firstItem="yJA-rr-4tm" firstAttribute="bottom" secondItem="a15-lh-YVY" secondAttribute="bottom" constant="251" id="Zmo-tg-iAF"/>
+                            <constraint firstItem="DwL-HJ-WAM" firstAttribute="top" secondItem="yJA-rr-4tm" secondAttribute="top" id="in4-lC-by6"/>
+                            <constraint firstItem="a15-lh-YVY" firstAttribute="trailing" secondItem="bPc-ZO-99N" secondAttribute="trailingMargin" id="n1c-qG-Yyb"/>
+                            <constraint firstItem="a15-lh-YVY" firstAttribute="leading" secondItem="Qca-Tt-rMh" secondAttribute="leading" id="xL5-1x-M2b"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="yJA-rr-4tm"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Healthy Blueberry" id="rIC-d8-YvC"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zao-bA-Y8B" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4240.579710144928" y="801.5625"/>
+        </scene>
+        <!--Healthy Strawberry-->
+        <scene sceneID="385-X1-YRf">
+            <objects>
+                <viewController id="ML6-hw-SVU" customClass="MMViewController" customModule="SkinCancerDetectorApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dWO-15-vT5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Your strawberry is healthy!" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5C4-XI-Vv0">
+                                <rect key="frame" x="11" y="382" width="383" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="usz-4K-pqS"/>
+                                </constraints>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Congratulations!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Nx-Cy-05B">
+                                <rect key="frame" x="11" y="347" width="174.5" height="30"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="25"/>
+                                <color key="textColor" red="0.915420711" green="0.53871709109999999" blue="0.15023604039999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="strawberryhealthy" translatesAutoresizingMaskIntoConstraints="NO" id="pCw-3I-ERa">
+                                <rect key="frame" x="11" y="108" width="383" height="236"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="236" id="JN7-rd-TPO"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="0Nx-Cy-05B" firstAttribute="leading" secondItem="5C4-XI-Vv0" secondAttribute="leading" id="AUU-Ss-zwe"/>
+                            <constraint firstItem="0Nx-Cy-05B" firstAttribute="leading" secondItem="LCe-zN-3p5" secondAttribute="leading" constant="11" id="GCG-ZI-CXP"/>
+                            <constraint firstItem="pCw-3I-ERa" firstAttribute="trailing" secondItem="dWO-15-vT5" secondAttribute="trailingMargin" id="MmT-6q-pNU"/>
+                            <constraint firstItem="pCw-3I-ERa" firstAttribute="top" secondItem="LCe-zN-3p5" secondAttribute="top" id="RZO-8u-S71"/>
+                            <constraint firstItem="5C4-XI-Vv0" firstAttribute="top" secondItem="dWO-15-vT5" secondAttribute="top" constant="382" id="hzg-fs-Xdv"/>
+                            <constraint firstItem="pCw-3I-ERa" firstAttribute="trailing" secondItem="5C4-XI-Vv0" secondAttribute="trailing" id="tOA-Ip-s6c"/>
+                            <constraint firstItem="pCw-3I-ERa" firstAttribute="leading" secondItem="0Nx-Cy-05B" secondAttribute="leading" id="vng-Xg-aP8"/>
+                            <constraint firstItem="5C4-XI-Vv0" firstAttribute="top" secondItem="0Nx-Cy-05B" secondAttribute="bottom" constant="5" id="yBD-7j-iZg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="LCe-zN-3p5"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Healthy Strawberry" id="r6h-Do-AAw"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DHv-Wd-4xn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4997" y="802"/>
+        </scene>
+        <!--Peach Healthy-->
+        <scene sceneID="2dQ-Vm-cRs">
+            <objects>
+                <viewController id="Aan-b3-83m" customClass="MMViewController" customModule="SkinCancerDetectorApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kWN-26-rqg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VhF-AS-qAh">
+                                <rect key="frame" x="11" y="382" width="383" height="142"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="142" id="RQL-zP-kGV"/>
+                                </constraints>
+                                <string key="text">Your peach is healthy! Peaches should be planted in either the late winter or early spring for the best results. In areas where snow may be prevalent, make sure to plant peaches only when the soil has thawed. For the best chances, plant peach trees in highly sunny areas. Make sure to pick peaches carefully as they are known to bruise easily.
+</string>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Congratulations!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6tt-wo-IGm">
+                                <rect key="frame" x="11" y="347" width="174.5" height="30"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="25"/>
+                                <color key="textColor" red="0.915420711" green="0.53871709109999999" blue="0.15023604039999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="peachhealthy" translatesAutoresizingMaskIntoConstraints="NO" id="dN6-hL-CU5">
+                                <rect key="frame" x="11" y="108" width="383" height="236"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="236" id="e8D-fr-MK8"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="VhF-AS-qAh" firstAttribute="top" secondItem="6tt-wo-IGm" secondAttribute="bottom" constant="5" id="A9e-Gj-p7h"/>
+                            <constraint firstItem="dN6-hL-CU5" firstAttribute="leading" secondItem="6tt-wo-IGm" secondAttribute="leading" id="OP1-mY-qC8"/>
+                            <constraint firstItem="dN6-hL-CU5" firstAttribute="top" secondItem="1et-wK-cCn" secondAttribute="top" id="PH4-40-GOb"/>
+                            <constraint firstItem="VhF-AS-qAh" firstAttribute="leading" secondItem="6tt-wo-IGm" secondAttribute="leading" id="SG6-Gm-m4U"/>
+                            <constraint firstItem="6tt-wo-IGm" firstAttribute="leading" secondItem="1et-wK-cCn" secondAttribute="leading" constant="11" id="U1Z-ax-KjC"/>
+                            <constraint firstItem="dN6-hL-CU5" firstAttribute="trailing" secondItem="VhF-AS-qAh" secondAttribute="trailing" id="XKx-WV-8XH"/>
+                            <constraint firstItem="1et-wK-cCn" firstAttribute="bottom" secondItem="VhF-AS-qAh" secondAttribute="bottom" constant="284" id="a3T-4H-ceS"/>
+                            <constraint firstItem="VhF-AS-qAh" firstAttribute="trailing" secondItem="kWN-26-rqg" secondAttribute="trailingMargin" id="lsr-Ut-0WH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="1et-wK-cCn"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Peach Healthy" id="SOM-x4-K7m"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dwp-8t-d69" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5789.8550724637689" y="801.5625"/>
+        </scene>
+        <!--Corn Healthy-->
+        <scene sceneID="dqz-HQ-g2T">
+            <objects>
+                <viewController id="29A-cG-5lP" customClass="MMViewController" customModule="SkinCancerDetectorApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EGR-S2-h9n">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="suC-78-dMu">
+                                <rect key="frame" x="11" y="382" width="383" height="122"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="122" id="U0w-ac-vqh"/>
+                                </constraints>
+                                <string key="text">Your corn is healthy!  Make sure to plant corn in the early Spring to make sure the Fall frost doesn’t hinder their growth.  Corn plants are notably difficult to find proper soil for, so add fresh manure and compost over winter for the soil to develop.  You should space out cornrows around 30-36 inches away for room to grow. 
+</string>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Congratulations!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cTF-xc-AUc">
+                                <rect key="frame" x="11" y="347" width="174.5" height="30"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="25"/>
+                                <color key="textColor" red="0.915420711" green="0.53871709109999999" blue="0.15023604039999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="healthycorn-removebg-preview" translatesAutoresizingMaskIntoConstraints="NO" id="KZp-AQ-7Ac">
+                                <rect key="frame" x="11" y="108" width="383" height="236"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="236" id="kxN-5E-0Ef"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="suC-78-dMu" firstAttribute="leading" secondItem="cTF-xc-AUc" secondAttribute="leading" id="1Bc-w1-Zp1"/>
+                            <constraint firstItem="suC-78-dMu" firstAttribute="top" secondItem="cTF-xc-AUc" secondAttribute="bottom" constant="5" id="2ns-wf-5Sg"/>
+                            <constraint firstItem="KZp-AQ-7Ac" firstAttribute="top" secondItem="hbL-ew-q8j" secondAttribute="top" id="EI9-f1-xBI"/>
+                            <constraint firstItem="suC-78-dMu" firstAttribute="trailing" secondItem="KZp-AQ-7Ac" secondAttribute="trailing" id="ICM-BS-mbI"/>
+                            <constraint firstItem="hbL-ew-q8j" firstAttribute="bottom" secondItem="suC-78-dMu" secondAttribute="bottom" constant="304" id="PQu-gH-BNh"/>
+                            <constraint firstItem="KZp-AQ-7Ac" firstAttribute="leading" secondItem="cTF-xc-AUc" secondAttribute="leading" id="RYG-On-jll"/>
+                            <constraint firstItem="KZp-AQ-7Ac" firstAttribute="trailing" secondItem="EGR-S2-h9n" secondAttribute="trailingMargin" id="bEF-Mk-a27"/>
+                            <constraint firstItem="cTF-xc-AUc" firstAttribute="leading" secondItem="hbL-ew-q8j" secondAttribute="leading" constant="11" id="zHn-5N-IcD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hbL-ew-q8j"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Corn Healthy" id="KBl-mj-e1e"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="umW-T7-Tcd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6560.8695652173919" y="801.5625"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+    <resources>
+        <image name="camera.viewfinder" catalog="system" width="128" height="114"/>
+        <image name="earlyblight2" width="600" height="600"/>
+        <image name="grapeblackmeasles" width="310" height="163"/>
+        <image name="healthyblueberries" width="1155" height="648"/>
+        <image name="healthycorn-removebg-preview" width="637" height="392"/>
+        <image name="healthytomato" width="1155" height="648"/>
+        <image name="icons8-circle-100" width="100" height="100"/>
+        <image name="icons8-potted-plant-96 (1)" width="96" height="96"/>
+        <image name="peachhealthy" width="3008" height="2000"/>
+        <image name="septoria1" width="800" height="533"/>
+        <image name="strawberryhealthy" width="1500" height="1126"/>
+        <image name="targetspot" width="676" height="537"/>
+    </resources>
+</document>

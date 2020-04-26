@@ -1,0 +1,53 @@
+PODS:
+  - AssetsPickerViewController (2.7.6):
+    - Device
+    - SnapKit
+  - CropViewController (2.5.2)
+  - Device (3.2.1)
+  - Floaty (4.2.0)
+  - ImageTransition (0.4.0)
+  - KeyboardObserver (2.1.0)
+  - MultiSelectSegmentedControl (2.3.3):
+    - SweeterSwift
+  - SnapKit (5.0.1)
+  - SweeterSwift (1.1.3)
+  - TwicketSegmentedControl (0.1.2)
+
+DEPENDENCIES:
+  - AssetsPickerViewController (~> 2.6)
+  - CropViewController
+  - Floaty (~> 4.2.0)
+  - ImageTransition
+  - KeyboardObserver (~> 2.1)
+  - MultiSelectSegmentedControl
+  - SnapKit (~> 5.0.0)
+  - TwicketSegmentedControl
+
+SPEC REPOS:
+  trunk:
+    - AssetsPickerViewController
+    - CropViewController
+    - Device
+    - Floaty
+    - ImageTransition
+    - KeyboardObserver
+    - MultiSelectSegmentedControl
+    - SnapKit
+    - SweeterSwift
+    - TwicketSegmentedControl
+
+SPEC CHECKSUMS:
+  AssetsPickerViewController: d4f744efd5c37f25d01639f061226b9efbf8525e
+  CropViewController: 1aac40093c5739e60d992b04724a55d12a689a4c
+  Device: 0738862dd8a30856b4bd9e21cb9b728873d21392
+  Floaty: e2bd5a0f6f7f70899e26ff2da31081c8bee8d1b0
+  ImageTransition: 0156cdd9d25c5788492f7ea8255b789fb0d07623
+  KeyboardObserver: 338f87db88f4d6f4b4af334fe025bc824251d57b
+  MultiSelectSegmentedControl: 170794791657e12ee5ff5c09dae5f6af1976746d
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+  SweeterSwift: d909211f6833405628c8c7c6bf9f8f2e8a0e9df9
+  TwicketSegmentedControl: 6d7a4cf243657e0ac3f00d06d873a25334c04042
+
+PODFILE CHECKSUM: 216f4a422c44c11502420529bd508d320d9927ca
+
+COCOAPODS: 1.9.1

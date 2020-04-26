@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="D3a-w0-QAQ">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Hospitals-->
+        <scene sceneID="ePA-j1-Oug">
+            <objects>
+                <viewController storyboardIdentifier="ItemVC" id="zXB-2M-VbI" customClass="ItemVC" customModule="PlaceFinder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OLu-0g-wmB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="g5c-l4-VLa"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Hospitals" selectedImage="hospital" id="gl0-Rr-xoq"/>
+                    <navigationItem key="navigationItem" id="CE8-3e-t2B"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ex8-5v-DZe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="928.79999999999995" y="878.41079460269873"/>
+        </scene>
+        <!--Default View-->
+        <scene sceneID="15v-s3-MNe">
+            <objects>
+                <viewController storyboardIdentifier="TextViewVC" id="D3a-w0-QAQ" customClass="TextViewVC" customModule="PlaceFinder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="d2K-xS-NdG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="Xwh-1a-U5I"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Default View" image="doc" catalog="system" id="JxA-vf-KbF"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m4l-3c-N5N" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-677.60000000000002" y="878.41079460269873"/>
+        </scene>
+        <!--City SelectVC-->
+        <scene sceneID="C9S-aY-4Pg">
+            <objects>
+                <viewController storyboardIdentifier="CitySelectVC" id="Y5R-bK-j9T" customClass="CitySelectVC" customModule="PlaceFinder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KVp-Nm-ydB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="CXD-QS-zYr"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="mMA-7U-nNA"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JgN-xj-EcT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="103.2" y="880.20989505247383"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="doc" catalog="system" width="115" height="128"/>
+        <image name="hospital" width="128" height="128"/>
+    </resources>
+</document>

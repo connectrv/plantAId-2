@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7xE-wI-E83">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--diseaseTracker2-->
+        <scene sceneID="NnB-QG-zb6">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="diseaseTracker2" id="0A4-eY-xg5" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="yvF-Zn-O7c"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DFl-2e-NSO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1602" y="-391"/>
+        </scene>
+        <!--Disease Tracker-->
+        <scene sceneID="c6L-pT-471">
+            <objects>
+                <tableViewController storyboardIdentifier="diseaseTracker2" id="2LO-aN-bOC" customClass="PlantLibraryTableViewController" customModule="PlantTracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="70" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Nnu-KF-L7Z">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PlantCell" id="vmk-V7-zn5" customClass="PlantLibraryTableViewCell" customModule="PlantTracker" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="70"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vmk-V7-zn5" id="FWq-u1-5bB">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <segue destination="8tr-dJ-Prf" kind="show" identifier="showLibraryDetail" id="rq2-OE-Rhw"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="2LO-aN-bOC" id="jiv-pe-qVe"/>
+                            <outlet property="delegate" destination="2LO-aN-bOC" id="eHh-ca-LUn"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Disease Tracker" id="Yrf-zi-9xU">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="pJd-hF-Ntu">
+                            <connections>
+                                <segue destination="0A4-eY-xg5" kind="show" id="wlJ-UY-gRs"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t98-sE-eVR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1881.1594202898552" y="27.455357142857142"/>
+        </scene>
+        <!--Library Detail View Controller-->
+        <scene sceneID="eVm-Qb-Pz6">
+            <objects>
+                <viewController hidesBottomBarWhenPushed="YES" id="8tr-dJ-Prf" customClass="LibraryDetailViewController" customModule="PlantTracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="lGB-rq-C0Q">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iUt-3R-xzH" customClass="LibraryDetailView" customModule="PlantTracker" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Pmr-w8-GNv">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BtM-mB-fCG">
+                                                <rect key="frame" x="0.0" y="-88" width="414" height="388"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aj3-hg-j4n">
+                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="388"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                            <segmentedControl hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="ILy-vi-GTY">
+                                                <rect key="frame" x="0.0" y="299" width="414" height="28"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <segments>
+                                                    <segment title="Information" enabled="NO"/>
+                                                    <segment title="Notes"/>
+                                                    <segment title=""/>
+                                                </segments>
+                                            </segmentedControl>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Od-2g-NnX">
+                                                <rect key="frame" x="0.0" y="327" width="414" height="456"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </scrollView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="headerImageView" destination="aj3-hg-j4n" id="zDF-7U-lc0"/>
+                                    <outlet property="headerView" destination="BtM-mB-fCG" id="aeL-sg-0X2"/>
+                                    <outlet property="informationView" destination="5Od-2g-NnX" id="BoX-pS-P6K"/>
+                                    <outlet property="mainScrollView" destination="Pmr-w8-GNv" id="STd-YQ-Rtr"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="c9U-8y-V1m"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="9Sv-q7-lPw"/>
+                    <connections>
+                        <segue destination="Tov-GE-fm9" kind="unwind" identifier="unwindToLibraryTableView" unwindAction="unwindToLibraryTableView:" id="QFh-la-5GX"/>
+                        <segue destination="Q88-5V-vha" kind="show" identifier="showImageCollectionView" id="XvN-4x-ZVt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BpI-uB-fpm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Tov-GE-fm9" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2834.7826086956525" y="26.785714285714285"/>
+        </scene>
+        <!--Image Collection View Controller-->
+        <scene sceneID="ZmD-M4-7sJ">
+            <objects>
+                <collectionViewController hidesBottomBarWhenPushed="YES" id="Q88-5V-vha" customClass="ImageCollectionViewController" customModule="PlantTracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" dataMode="prototypes" id="IFC-CL-X2o">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="83p-OC-Tcd">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="image" id="mK5-ff-rwd" customClass="ImageCollectionViewCell" customModule="PlantTracker" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="1000" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yWk-Es-9Jz">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        </imageView>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ukg-Ei-ysK" userLabel="Shading View">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gpr-tn-Yjp">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </view>
+                                    </subviews>
+                                </view>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Ukg-Ei-ysK" secondAttribute="bottom" id="3qn-Jz-5HI"/>
+                                    <constraint firstAttribute="trailing" secondItem="yWk-Es-9Jz" secondAttribute="trailing" id="5Bq-Nl-vpx"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ukg-Ei-ysK" secondAttribute="trailing" id="EOR-2h-ckm"/>
+                                    <constraint firstItem="gpr-tn-Yjp" firstAttribute="top" secondItem="mK5-ff-rwd" secondAttribute="top" id="NHf-wd-GcQ"/>
+                                    <constraint firstItem="yWk-Es-9Jz" firstAttribute="top" secondItem="mK5-ff-rwd" secondAttribute="top" id="Oe5-Bx-HgH"/>
+                                    <constraint firstItem="Ukg-Ei-ysK" firstAttribute="leading" secondItem="mK5-ff-rwd" secondAttribute="leading" id="Rfg-jZ-vcw"/>
+                                    <constraint firstAttribute="trailing" secondItem="gpr-tn-Yjp" secondAttribute="trailing" id="Tk7-1e-La6"/>
+                                    <constraint firstItem="gpr-tn-Yjp" firstAttribute="leading" secondItem="mK5-ff-rwd" secondAttribute="leading" id="WmS-2a-jx4"/>
+                                    <constraint firstAttribute="bottom" secondItem="gpr-tn-Yjp" secondAttribute="bottom" id="XGX-YD-B46"/>
+                                    <constraint firstItem="yWk-Es-9Jz" firstAttribute="leading" secondItem="mK5-ff-rwd" secondAttribute="leading" id="dLM-qt-0tG"/>
+                                    <constraint firstAttribute="bottom" secondItem="yWk-Es-9Jz" secondAttribute="bottom" id="q2j-kG-gym"/>
+                                    <constraint firstItem="Ukg-Ei-ysK" firstAttribute="top" secondItem="mK5-ff-rwd" secondAttribute="top" id="ypF-bh-53M"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="borderView" destination="gpr-tn-Yjp" id="x79-6T-Lcd"/>
+                                    <outlet property="imageView" destination="yWk-Es-9Jz" id="5ZC-Q4-coQ"/>
+                                    <outlet property="shadingView" destination="Ukg-Ei-ysK" id="aLG-aK-aTA"/>
+                                    <segue destination="no7-kd-Rau" kind="show" identifier="toPagingViewCollection" id="mat-Gs-JJf"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="Q88-5V-vha" id="HHx-r9-vCH"/>
+                            <outlet property="delegate" destination="Q88-5V-vha" id="EXi-Ig-zkh"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="jK2-tw-Og3"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LZB-og-C2s" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3728.985507246377" y="-657.58928571428567"/>
+        </scene>
+        <!--Image Paging Collection View Controller-->
+        <scene sceneID="6DM-mI-Jam">
+            <objects>
+                <collectionViewController id="no7-kd-Rau" customClass="ImagePagingCollectionViewController" customModule="PlantTracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="fQR-OH-bml">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="xcA-r5-9xX">
+                            <size key="itemSize" width="150" height="133"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="scrollingImageCell" id="kfZ-H2-Ahg" customClass="ImagePagingViewCell" customModule="PlantTracker" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="150" height="133"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                    <rect key="frame" x="0.0" y="0.0" width="150" height="133"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="erM-Ze-A5E">
+                                            <rect key="frame" x="0.0" y="2" width="150" height="128"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nsS-oB-obV">
+                                                    <rect key="frame" x="0.0" y="0.0" width="150" height="128"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </scrollView>
+                                    </subviews>
+                                </view>
+                                <connections>
+                                    <outlet property="imageView" destination="nsS-oB-obV" id="J2s-k4-LzW"/>
+                                    <outlet property="scrollView" destination="erM-Ze-A5E" id="pwn-Iu-1Ud"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="no7-kd-Rau" id="zUu-aE-QFB"/>
+                            <outlet property="delegate" destination="no7-kd-Rau" id="CPc-06-YC4"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="3jd-hp-gj8"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XGH-Ax-gvm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4594" y="-658"/>
+        </scene>
+        <!--Library-->
+        <scene sceneID="Efg-i3-aPm">
+            <objects>
+                <navigationController storyboardIdentifier="diseaseTracker" automaticallyAdjustsScrollViewInsets="NO" modalTransitionStyle="crossDissolve" modalPresentationStyle="overFullScreen" id="7xE-wI-E83" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Library" image="flowersPotOfYard" id="3WW-zx-15t"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="moA-nY-VYy">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" red="0.915420711" green="0.53871709109999999" blue="0.15023604039999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="2LO-aN-bOC" kind="relationship" relationship="rootViewController" id="jxh-bk-WVW"/>
+                        <segue destination="avx-T7-vGd" kind="show" id="awE-gw-oqk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kT5-mm-zCw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="971.01449275362324" y="27.455357142857142"/>
+        </scene>
+        <!--diseaseTracker-->
+        <scene sceneID="FOb-3t-031">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="diseaseTracker" id="avx-T7-vGd" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="VUf-xg-FbR"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gqm-5m-Yzt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="914" y="394"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="flowersPotOfYard" width="128" height="128"/>
+    </resources>
+</document>
